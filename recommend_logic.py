@@ -1,5 +1,7 @@
 # 점수를 받아서 출력 하는 함수 만들기
 
+#큰 2차원 배열 하나에서 사용자가 입력한 값 result의 원소와 각 원소를 비교
+
 # 미리 등록해놓은 커피 데이터
 lobster_uganda = [4, 2, 3, 3, 4]
 brazil_cerrado = [4, 2, 3, 4, 3]
@@ -9,6 +11,8 @@ colombia_supremo = [4, 2, 3, 4, 2]
 guatemala = [5, 3, 5, 4, 3]
 ethiopia_yirgacheffe = [4, 5, 3, 4, 3]
 kenya_AA = [4, 5, 3, 4, 3]
+
+
 
 # 사용자가 선택한 결과
 body = 4
