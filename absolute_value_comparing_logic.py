@@ -52,11 +52,11 @@ list_beans_name = ["lobster_uganda", "brazil_cerrado", "brazil_kenya", "ethiopia
                    "malawi_AAA_plus", "zimbabwe_AA_plus", "tanzania_AA_plus"]
 
 # 사용자가 선택한 결과
-body = 3
-acidity = 1
-sweet = 5
-flavor = 5
-bitter = 1
+body = 5
+acidity = 4
+sweet = 3
+flavor = 4
+bitter = 3
 
 # 첫 번째 열 비교해서 합산하기
 result_body = []
@@ -93,9 +93,16 @@ for i in range(len(list_beans)):
     result.append((result_body[i] + result_acidity[i] + result_sweet[i] + result_flavor[i] + result_bitter[i]))
 print(result)
 
+# 가장 차이가 적은 결과 출력하기
 result_min = min(result)
-
-ideal_bean = result.index(result_min)
-print(ideal_bean)
-
+ideal_bean_index = result.index(result_min)
+print(ideal_bean_index)
 print(list_beans_name[result.index(result_min)])
+
+# 동점인 결과값 출력하기
+# res_list = list(filter(lambda x: result == result_min, range(len(result))))
+res_list = [i for i, value in enumerate(result) if value == min(result)]
+print(str(res_list))
+print(res_list)
+
+# 두 번째로 작은 결과값
